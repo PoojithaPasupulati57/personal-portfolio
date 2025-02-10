@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poojitha | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <!-- Add Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Navbar Section (Left Box) -->
+            <div class="col-md-6 vh-100 d-flex flex-column align-items-center justify-content-center bg-dark text-white fixed-left">
+                <h1 class="name" style="font-size:xxx-large;"><b>Pasupulati Poojitha</b></h1>
+                <section id="currently-working" class="mt-4">
+                    <p>I’m building a <strong>Flask-based personal portfolio website</strong> while enhancing my skills in web development. Currently, I'm diving deeper into <strong>JavaScript</strong> and planning to learn <strong>React.js</strong> to create interactive web applications.</p>
+                </section>
+                <nav class="nav flex-column">
+                    <a class="nav-link text-white" href="#about">About</a>
+                    <a class="nav-link text-white" href="#education">Education</a>
+                    <a class="nav-link text-white" href="#skills">Skills</a>
+                    <a class="nav-link text-white" href="#projects">Projects</a>
+                    <a class="nav-link text-white" href="#internship-experience">Internship</a>
+                    <a class="nav-link text-white" href="#certifications">Certifications</a>
+                    <a class="nav-link text-white" href="#organizations">Organizations</a>
+                </nav>
+                <!-- Social Media Icons -->
+                <div class="social-icons mt-4">
+                    <a href="https://github.com/PoojithaPasupulati57" target="_blank" class="text-white mx-2">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pasupuleti-poojitha7-027486215" target="_blank" class="text-white mx-2">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:poojithapasupuleti57@gmail.com">poojithapasupuleti57@gmail.com</a></p>
+                </div>
+                <!-- Resume Download Link -->
+                <a class="nav-link text-white" href="{{ url_for('static', filename='resume.pdf') }}" target="_blank">Download Resume</a>
+            </div>
+
+            <!-- Content Section (Right Box) -->
+            <div class="col-md-6 vh-100 overflow-auto p-5">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>Hi, I’m <strong>POOJITHA</strong>, a passionate web developer who loves building user-friendly and responsive web applications. I am currently working on a <strong>Flask-based personal portfolio website</strong> to showcase my skills and projects. One of my key projects is a <strong>Stock Portfolio Tracker</strong>, which helps users track and manage their stock investments. I’ve built it using Flask for the backend and integrated essential features like user authentication and real-time stock data tracking.</p>
+                    <p>As I continue to enhance my web development skills, I’m planning to learn <strong>React.js</strong> to build more dynamic and interactive user interfaces. I’m excited to explore React’s components, hooks, and state management to create modern web applications.</p>
+                    <p>When I’m not coding, I enjoy exploring new technologies, experimenting with new ideas, and working on exciting web development projects. I’m always looking for ways to grow as a developer and contribute to meaningful projects.</p>
+                </section>
+                <section id="education" class="mt-4">
+                    <h2>Education</h2>
+                    <p><strong>B.Tech in CSE (AI & DS)</strong> – Vasireddy Venkatadri Institute of Technology</p>
+                    <p><strong>Senior Secondary (XII)</strong> – Narayana Junior College</p>
+                    <p><strong>Secondary (X)</strong> – Oxford Public School</p>
+                </section>
+                <section id="skills" class="mt-4">
+                    <h2>Skills</h2>
+                    <div class="skills-list">
+                        <span class="skill">Python</span>
+                        <span class="skill">SQL</span>
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Flask</span>
+                    </div>
+                </section>
+                <section id="projects" class="mt-4">
+                    <h2>Projects</h2>
+                    <div class="project">
+                        <h5>2024/12 – Simple Portfolio Tracker</h5>
+                        <p>I created a <strong>Simple Portfolio Tracker</strong> using Flask. It tracks the stock data that a user has invested in by utilizing an API and fetching data from Alpha Vantage. I deployed the project on AWS to make it accessible to users.</p>
+                    </div>
+                    <div class="project">
+                        <h5>2024/09 – Web Scraping</h5>
+                        <p>I scraped data from the Makaan website in the Hyderabad location category. Here's what I accomplished:</p>
+                        <ul>
+                            <li>Extracted and printed each detail step-by-step</li>
+                            <li>Combined the data to create a comprehensive overview</li>
+                            <li>Used <strong>Pandas</strong> to organize the data into a DataFrame</li>
+                            <li>Exported the data into a CSV file for easy access and analysis</li>
+                        </ul>
+                    </div>
+                    <div class="project">
+                        <h5>2023/12 – A Road Accident Prediction Model</h5>
+                        <p>Developed and deployed a machine learning model to predict road traffic accident severity using a dataset of 12,316 accidents. I employed feature selection techniques and various algorithms, achieving competitive performance. Additionally, I created a user-friendly prediction application using <strong>Streamlit</strong> for real-time severity assessment.</p>
+                    </div>
+                    <div class="project">
+                        <h5>2024/10 – Organic E-store</h5>
+                        <p>Designed and developed an organic e-store using HTML, CSS, and Bootstrap. The website includes features like a dashboard, about section, payment integration, address management, and contact page.</p>
+                    </div>
+                </section>
+                <section id="internship-experience" class="mt-4">
+                    <h2>Internship & Experience</h2>
+                    <p><strong>Medical Inventory Management Project</strong> – Worked on an Excel-based medical inventory management system as part of an internship.</p>
+                </section>
+                <section id="certifications" class="mt-4">
+                    <h2>Certifications</h2>
+                    <ul>
+                        <li><strong>HackerRank Python</strong></li>
+                        <li><strong>AI For Everyone</strong></li>
+                    </ul>
+                </section>
+                <section id="organizations" class="mt-4">
+                    <h2>Organizations & Memberships</h2>
+                    <ul>
+                        <li><strong>BCDE Member</strong> – Organized by Govt. of Andhra Pradesh</li>
+                        <li><strong>ACM (Association of Computing Machinery) Member</strong></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
